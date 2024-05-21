@@ -40,7 +40,7 @@ class Server:
         start_index = indexes[0]
         end_index = indexes[1]
         return self.dataset()[start_index:end_index]
-    
+
     def get_hyper(self, page: int = 1, page_size:
                   int = 10) -> Dict[str, Union[int, List[List], None]]:
         """returns a dictionary containing key-value pairs
