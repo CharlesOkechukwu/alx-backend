@@ -9,7 +9,7 @@ class LRUCache(BaseCaching):
         """initialize class instance attributes"""
         super().__init__()
         self._queue = []
-    
+
     def put(self, key, item):
         """add or remove key/value pair using LRU algorithm"""
         if key is not None and item is not None:
@@ -21,7 +21,7 @@ class LRUCache(BaseCaching):
                 out_key = self._queue.pop(0)
                 del self.cache_data[out_key]
                 print("DISCARD: {}".format(out_key))
-    
+
     def get(self, key):
         """return value for key in self.cache_data or None"""
         if key is not None:
