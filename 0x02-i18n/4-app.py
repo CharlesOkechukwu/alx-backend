@@ -19,15 +19,15 @@ babel = Babel(app)
 @babel.localeselector
 def get_locale():
     """return the best matched language from request"""
+    locale_arg = request.args.get('locale', '').strip()
+    if locale_arg and locale_arg in Config.LANGUAGES:
+        return locale_arg
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
     """renders template with hello hbnb"""
-    locale_arg = request.args.get('locale', '').strip()
-    if locale_arg and locale_arg in Config.LANGUAGES:
-        return locale_arg
     return render_template('4-index.html')
 
 
