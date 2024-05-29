@@ -25,7 +25,7 @@ def get_locale():
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
     """renders template with hello hbnb"""
-    locale_arg = request.args.get('locale', '')
+    locale_arg = request.args.get('locale', '').strip()
     if locale_arg and locale_arg in Config.LANGUAGES:
         return locale_arg
     return render_template('4-index.html')
