@@ -25,3 +25,11 @@ msgstr "Bienvenue chez Holberton"
 # for 3-index.html header
 msgid "home_header"
 msgstr "Bonjour monde!"
+
+# for 5-index logged in message
+msgid "logged_in_as"
+msgstr "Vous êtes connecté en tant que %(username)s."
+
+# for 5-index.html not logged in message
+msgid "not_logged_in"
+msgstr "Vous n'êtes pas connecté."

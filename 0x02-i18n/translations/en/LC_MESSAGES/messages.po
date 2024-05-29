@@ -25,3 +25,11 @@ msgstr "Welcome to Holberton"
 # 3-index.html header
 msgid "home_header"
 msgstr "Hello world!"
+
+# 5-index.html logged in message
+msgid "logged_in_as"
+msgstr "You are logged in as %(username)s."
+
+# 5-index.html not logged in message
+msgid "not_logged_in"
+msgstr "You are not logged in."
