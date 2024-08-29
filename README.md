@@ -13,3 +13,17 @@ The learning objectives of this project are:
 - How to paginate a dataset with simple page and page_size parameters
 - How to paginate a dataset with hypermedia metadata
 - How to paginate in a deletion-resilient manner
+
+
+## Caching Techniques
+
+The learning objectives of this project are:
+
+- What a caching system is
+- What FIFO means
+- What LIFO means
+- What LRU means
+- What MRU means
+- What LFU means
+- What the purpose of a caching system
+- What limits a caching system have
